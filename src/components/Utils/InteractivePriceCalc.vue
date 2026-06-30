@@ -62,14 +62,14 @@ export default {
       weeks: 3,
 
       selected: {
-        frontend: false,
+        frontend: true,
         backend: false,
         devops: false,
         maintenance: false
       },
 
       services: [
-        { key: "frontend", label: "Frontend", desc: "UI & Web Apps", price: 1200 },
+        { key: "frontend", label: "Frontend", desc: "UI & Web Apps", price: 1200, selected: true },
         { key: "backend", label: "Backend", desc: "API & Logic", price: 1500 },
         { key: "devops", label: "DevOps", desc: "Cloud & Deploy", price: 800 },
         { key: "maintenance", label: "Maintenance", desc: "Support & Fix", price: 400 }
@@ -88,9 +88,9 @@ export default {
       });
 
       base += this.screens * 90;
-      base += (12 - this.weeks) * 180;
+      base += (12 - this.weeks) * 160;
 
-      return Math.round(base) ;
+      return Math.round(base);
     }
   },
 

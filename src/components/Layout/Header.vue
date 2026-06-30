@@ -15,9 +15,9 @@
 
       <nav :class="{ open: menuOpen }">
         <router-link to="/">Home</router-link>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Tech Stack</a>
         <router-link to="/about">About</router-link>
-        <router-link to="/projects">Projects</router-link>
-        <router-link to="#skills">Tech Stack</router-link>
         <router-link to="/contact">Contact</router-link>
       </nav>
     </div>

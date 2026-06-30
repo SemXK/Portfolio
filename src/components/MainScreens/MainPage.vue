@@ -1,6 +1,10 @@
 <script setup lang="ts">
 // @ts-ignore: suppress missing declaration for .vue modules
 import DisplayCompetenze from '../Utils/DisplayCompetenze.vue';
+import HomePageCardCompetenze from '../Utils/HomePageCardCompetenze.vue';
+import HomePageCV from '../Utils/HomePageCV.vue';
+import HomePageFeaturedProjects from '../Utils/HomePageFeaturedProjects.vue';
+import HomePageHero from '../Utils/HomePageHero.vue';
 // @ts-ignore: suppress missing declaration for .vue modules
 import InteractivePriceCalc from '../Utils/InteractivePriceCalc.vue';
 // @ts-ignore: suppress missing declaration for .vue modules
@@ -17,216 +21,22 @@ import TabResoconto from '../Utils/TabResoconto.vue';
 
     <!-- HERO -->
     <div class="hero my-4 md:my-12">
-      <div class="container w-screen flex flex-row justify-start relative">
-
-        <div class="hero-content w-100 md:w-3/5 z-1 flex flex-col gap-8 p-2">
-          <span class="eyebrow">FREELANCE FULL STACK DEVELOPER </span>
-
-          <h3>
-            Realizzo applicazioni web e mobile su misura
-            per aziende, startup e professionisti.
-          </h3>
-
-          <p>
-            Ciao, sono <b class="eyebrow">Nome</b>.
-            Da oltre 7 anni progetto e sviluppo soluzioni software complete,
-            seguendo l'intero ciclo di sviluppo: dall'analisi dei requisiti
-            fino alla pubblicazione in produzione.
-            Collaboro con aziende e startup per realizzare piattaforme web,
-            applicazioni mobile e software enterprise scalabili,
-            affidabili e pensati per crescere nel tempo.
-          </p>
-
-          <div class="hero-actions flex-row ">
-            <a href="#projects" class="btn-primary">
-              Scopri i progetti
-            </a>
-
-            <div class="btn-secondary">
-              <router-link to="/contact">Richiedi una consulenza</router-link>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="absolute flex flex-row flex-center w- top-0">
-          <video class="relative aspect-video overflow-hiddenblock w-full h-auto" autoplay muted loop playsinline>
-            <source src="../../assets/Portfolio Preview.mov" type="video/mp4">
-          </video>
-
-          <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/70 to-transparent">
-          </div>
-        </div>
-
-      </div>
+      <home-page-hero />
     </div>
 
     <!-- QUICK STATS -->
     <section class="stats z-1 ">
-      <div class="container flex flex-col gap-4 ">
-        <span class="eyebrow mb-4">PERCHÉ SCEGLIERMI</span>
-
-        <div class="stats-grid">
-
-          <div class="stat-card ">
-            <h3 class="eyebrow font-bold">7+</h3>
-            <span>Anni di esperienza</span>
-          </div>
-
-          <div class="stat-card">
-            <h3 class="eyebrow font-bold">Full Stack</h3>
-            <span>Sviluppo Web & Mobile</span>
-          </div>
-
-          <div class="stat-card">
-            <h3 class="eyebrow font-bold">Enterprise Stack</h3>
-            <span>Angular + Spring Boot + AWS</span>
-          </div>
-
-          <div class="stat-card">
-            <h3 class="eyebrow font-bold">Startup Stack</h3>
-            <span>Vue + React + FastAPI</span>
-          </div>
-
-        </div>
-
-      </div>
+      <home-page-card-competenze />
     </section>
 
     <!-- FEATURED PROJECT -->
     <section id="projects" class="featured-project z-1">
-      <div class="container flex flex-col gap-4">
-
-        <span class="eyebrow mb-4">PROGETTI IN EVIDENZA</span>
-
-        <div class="project-grid">
-
-          <div class="project-content">
-            <h3 class="eyebrow font-bold">Dreelo</h3>
-
-            <p>
-              Piattaforma mobile sviluppata con React Native e backend Laravel che
-              semplifica l'incontro tra clienti e professionisti del settore
-              edilizio, consentendo la richiesta, la gestione e il monitoraggio di
-              interventi di ristrutturazione in modo rapido e trasparente.
-              L'infrastruttura è ospitata su AWS con pipeline CI/CD automatizzate,
-              garantendo scalabilità, affidabilità e rilasci continui.
-            </p>
-
-            <ul>
-              <li>React Native & Laravel</li>
-              <li>Architettura cloud su AWS</li>
-              <li>Integrazione API e servizi di terze parti</li>
-              <li>Pipeline CI/CD e deploy automatizzato</li>
-            </ul>
-          </div>
-
-          <div>
-            <img class="project-media rounded-xl" src="../../assets/images/IMMAGINE PORTFOLIO 1.png" />
-          </div>
-
-        </div>
-
-        <div class="project-grid">
-
-          <div class="project-content">
-            <h3 class="eyebrow">Lunica</h3>
-
-            <p>
-              Piattaforma web e mobile sviluppata con Angular e Laravel per la gestione
-              centralizzata di lavoratori, mezzi industriali e gare d'appalto.
-              La soluzione digitalizza i processi operativi e amministrativi,
-              consentendo un monitoraggio completo delle risorse, una gestione
-              efficiente della documentazione e una pianificazione ottimizzata
-              delle attività. Progettata con un'architettura scalabile e
-              performante, garantisce elevati standard di affidabilità e
-              manutenibilità.
-            </p>
-
-            <ul>
-              <li>Angular & Laravel</li>
-              <li>Architettura cloud su AWS</li>
-              <li>Workflow per gare d'appalto</li>
-              <li>Sviluppo parallelo web - mobile</li>
-              <li>Architettura scalabile e integrazione API</li>
-            </ul>
-          </div>
-
-
-          <div>
-            <img class="project-media rounded-xl" src="../../assets/images/PREVIEW 2.png" />
-          </div>
-
-        </div>
-
-      </div>
+      <home-page-featured-projects />
     </section>
 
-    <!-- WHAT I DO -->
+    <!-- CV CARDS -->
     <section class="services z-1">
-      <div class="container flex flex-col gap-4">
-
-        <span class="eyebrow mb-4">SERVIZI</span>
-
-        <div class="services-grid">
-
-          <div class="service-card">
-            <h3 class="eyebrow">Frontend Development</h3>
-
-            <p>
-              Sviluppo di applicazioni web e mobile moderne, performanti e responsive.
-              Realizzo interfacce intuitive, dashboard, portali aziendali e applicazioni
-              multipiattaforma con particolare attenzione all'esperienza utente,
-              all'accessibilità e alla qualità del codice.
-            </p>
-
-            <ul>
-              <li>Angular</li>
-              <li>Vue</li>
-              <li>React</li>
-              <li>React Native</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <h3 class="eyebrow">Full Stack Development</h3>
-
-            <p>
-              Progettazione e sviluppo completo di applicazioni web e mobile,
-              dall'interfaccia utente ai servizi backend, API e database.
-              Realizzo soluzioni scalabili, sicure e progettate per crescere
-              insieme al business.
-            </p>
-
-            <ul>
-              <li>Spring Boot & Java</li>
-              <li>Laravel</li>
-              <li>FastAPI</li>
-              <li>PostgreSQL</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <h3 class="eyebrow">DevOps & Cloud Deployment</h3>
-
-            <p>
-              Gestione dell'intero ciclo di rilascio dell'applicazione con
-              infrastrutture cloud o on-premise. Configuro ambienti di sviluppo,
-              staging e produzione, automatizzando i processi di deploy per
-              garantire affidabilità, sicurezza e scalabilità.
-            </p>
-
-            <ul>
-              <li>Docker</li>
-              <li>AWS / Cloud</li>
-              <li>Deploy On-Premise</li>
-              <li>CI/CD</li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
+      <home-page-c-v />
     </section>
 
     <!-- OFFERINGS -->
@@ -255,7 +65,7 @@ import TabResoconto from '../Utils/TabResoconto.vue';
     </section>
 
     <!-- TECH STACK -->
-    <section class="container stack z-1">
+    <section id="skills" class="container stack z-1">
       <display-competenze />
     </section>
 
