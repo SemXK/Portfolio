@@ -39,121 +39,115 @@
 </template>
 
 <style scoped>
-  .hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(90deg,
+      rgba(2, 6, 23, .95) 0%,
+      rgba(2, 6, 23, .8) 40%,
+      rgba(2, 6, 23, .35) 100%);
+
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(700px, 90%);
+
+  margin-left: 8%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+
+  line-height: .95;
+
+  color: white;
+}
+
+p {
+  color: #cbd5e1;
+
+  font-size: 1.15rem;
+
+  line-height: 1.7;
+}
+
+.scroll-indicator {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: .75rem;
+
+  color: white;
+
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator svg {
+  color: #38bdf8;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
 
-  .hero-video {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    z-index: 0;
+  40% {
+    transform: translateY(10px);
   }
 
-  .overlay {
-    position: absolute;
-    inset: 0;
-
-    background:
-      linear-gradient(90deg,
-        rgba(2, 6, 23, .95) 0%,
-        rgba(2, 6, 23, .8) 40%,
-        rgba(2, 6, 23, .35) 100%);
-
-    z-index: 1;
+  60% {
+    transform: translateY(5px);
   }
+
+}
+
+@media (max-width:768px) {
 
   .content {
-    position: relative;
-
-    z-index: 2;
-
-    width: min(700px, 90%);
-
-    margin-left: 8%;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 1.5rem;
+    margin: auto;
+    width: 90%;
   }
 
-  .eyebrow {
-    color: #38bdf8;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-
-  h1 {
-    font-size: clamp(3rem, 6vw, 6rem);
-
-    line-height: .95;
-
-    color: white;
-  }
-
-  p {
-    color: #cbd5e1;
-
-    font-size: 1.15rem;
-
-    line-height: 1.7;
-  }
-
-  .scroll-indicator {
-    margin-top: 5rem;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: .75rem;
-
-    color: white;
-
-    animation: bounce 2s infinite;
-  }
-
-  .scroll-indicator svg {
-    color: #38bdf8;
-  }
-
-  @keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-
-    40% {
-      transform: translateY(10px);
-    }
-
-    60% {
-      transform: translateY(5px);
-    }
-
-  }
-
-  @media (max-width:768px) {
-
-    .content {
-      margin: auto;
-      width: 90%;
-    }
-
-  }
+}
 </style>

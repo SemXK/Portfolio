@@ -1,7 +1,7 @@
 <template>
   <div class="tech-section">
 
-    <h2 class="eyebrow">Tecnologie</h2>
+    <h2 class="eyebrow mb-4">Tecnologie</h2>
 
     <div class="tech-grid">
 

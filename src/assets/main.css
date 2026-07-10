@@ -41,7 +41,9 @@ html {
   background: #020617;
   color: white;
 }
-
+.fullScreenHeight {
+  min-height: 90vh;
+}
 .container {
   width: min(1200px, 90%);
   margin: auto;

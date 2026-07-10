@@ -41,22 +41,25 @@ import TabResoconto from '../Utils/TabResoconto.vue';
 
     <!-- OFFERINGS -->
     <section id="projects" class="projects z-1 flex flex-col gap-12">
-
       <div class="container">
         <span class="eyebrow mb-4">SERVIZI OFFERTI</span>
         <tab-offerte />
-      </div>  
+      </div>
+    </section>
 
+    <section class="projects z-1 flex flex-col gap-12">
       <div class="container">
         <span class="eyebrow mb-4">MODELLI DI COLLABORAZIONE</span>
         <tab-collaborazione />
-      </div>  
+      </div>
+    </section>
+
+    <section class="projects z-1 flex flex-col gap-12">
 
       <div class="container">
         <span class="eyebrow mb-4">STRUTTURA COSTI</span>
         <tab-resoconto />
-      </div> 
-
+      </div>
     </section>
 
     <!-- PRICE PREVIEW -->
@@ -93,18 +96,18 @@ import TabResoconto from '../Utils/TabResoconto.vue';
 
 
 <style scoped>
+.quote-calculator {
+  background: #0f172a;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 2rem;
+}
 
-  .quote-calculator {
-    background: #0f172a;
-    padding: 2rem;
-    border-radius: 16px;
-    margin-top: 2rem;
-  }
+.quote-calculator h3 {
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+}
 
-  .quote-calculator h3 {
-    color: #38bdf8;
-    margin-bottom: 1.5rem;
-  }
 html {
   scroll-behavior: smooth;
 }
@@ -160,11 +163,6 @@ section {
 .hero h3 {
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1;
-}
-
-.eyebrow {
-  color: #38bdf8;
-  font-weight: 700;
 }
 
 .hero-actions {
@@ -265,13 +263,9 @@ ul {
   .video-grid {
     grid-template-columns: 1fr;
   }
+
   .hero h1 {
     font-size: 2.5rem;
   }
 }
-
-
-
-
-
 </style>
