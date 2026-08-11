@@ -5,7 +5,7 @@
     <div class="stats-grid">
 
       <div class="stat-card ">
-        <h3 class="eyebrow font-bold">7+</h3>
+        <h3 class="eyebrow font-bold">3+</h3>
         <span>Anni di esperienza</span>
       </div>
 

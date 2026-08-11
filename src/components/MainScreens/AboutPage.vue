@@ -61,7 +61,7 @@ import TabCollaborazione from '../Utils/TabCollaborazione.vue';
         </div> -->
         <div class="flex flex-row justify-between">
           <div class="card">
-            <h3>7+</h3>
+            <h3>3+</h3>
             <p>Anni di esperienza</p>
           </div>
 
@@ -89,7 +89,7 @@ import TabCollaborazione from '../Utils/TabCollaborazione.vue';
 
     <section class="projects z-1 flex flex-col gap-12">
       <div class="container">
-        <span class="eyebrow mb-4">MODELLI DI COLLABORAZIONE</span>
+        <span class="eyebrow mb-4">MODELLI DI COLLABORAZIONE PER SVILUPPO AUTONOMO</span>
         <TabCollaborazione />
       </div>
     </section>

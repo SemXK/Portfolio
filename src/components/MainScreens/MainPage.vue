@@ -49,7 +49,7 @@ import TabResoconto from '../Utils/TabResoconto.vue';
 
     <section class="projects z-1 flex flex-col gap-12">
       <div class="container">
-        <span class="eyebrow mb-4">MODELLI DI COLLABORAZIONE</span>
+        <span class="eyebrow mb-4">MODELLI DI COLLABORAZIONE PER SVILUPPO AUTONOMO</span>
         <tab-collaborazione />
       </div>
     </section>

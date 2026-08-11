@@ -31,7 +31,7 @@
           <td>Schermate</td>
           <td>UI</td>
           <td>Complessità UI</td>
-          <td>€80 - €150 /cad</td>
+          <td>€80 - €150 /schermata</td>
         </tr>
 
         <tr>
@@ -49,9 +49,9 @@
         </tr>
 
         <tr>
-          <td>Infra</td>
-          <td>Cloud / On-prem</td>
-          <td>Deploy & setup</td>
+          <td>Infrastruttura</td>
+          <td>Cloud / On-premise</td>
+          <td>Deploy & Setup</td>
           <td>€500 - €2.000</td>
         </tr>
 

@@ -10,7 +10,7 @@
       </h3>
 
       <p>
-        Ciao, sono <b class="eyebrow">Nome</b>.
+        Ciao, sono <b class="eyebrow">Sabri Ben Dahmani</b>.
         Da oltre 7 anni progetto e sviluppo soluzioni software complete,
         seguendo l'intero ciclo di sviluppo: dall'analisi dei requisiti
         fino alla pubblicazione in produzione.
@@ -35,7 +35,7 @@
 
     <div class="absolute flex flex-row flex-center w- top-0">
       <video class="relative aspect-video overflow-hiddenblock w-full h-auto" autoplay muted loop playsinline>
-        <source src="../../assets/Portfolio Preview.mov" type="video/mp4">
+        <source src="../../assets/HomePageVideo.mp4" type="video/mp4">
       </video>
 
       <div class="absolute inset-0 bg-linear-to-r from-slate-950/95 via-slate-950/70 to-transparent">

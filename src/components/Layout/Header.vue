@@ -1,24 +1,21 @@
 <template>
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <span>JD.</span>
+      <div class="flex flex-row gap-4 items-center">
+        <img src="/src/assets/logo.svg" class="aspect-square h-12"/>
+        <span class="eyebrow text-2xl">Swan Tech</span>
       </div>
 
-      <button
-        class="menu-btn"
-        @click="menuOpen = !menuOpen"
-        aria-label="Toggle Menu"
-      >
+      <button class="menu-btn" @click="menuOpen = !menuOpen" aria-label="Toggle Menu">
         ☰
       </button>
 
       <nav :class="{ open: menuOpen }">
         <router-link to="/">Home</router-link>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Tech Stack</a>
+        <a href="/#projects">Progetti</a>
+        <a href="/#skills">Tech Stack</a>
         <router-link to="/about">About</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/contact">Contatti</router-link>
       </nav>
     </div>
   </header>
@@ -41,6 +38,8 @@ const menuOpen = ref(false)
 
 .container {
   max-width: 1200px;
+  max-height: 200px;
+
   margin: auto;
   padding: 1rem;
   display: flex;

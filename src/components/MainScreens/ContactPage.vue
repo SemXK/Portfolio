@@ -5,31 +5,31 @@ const contacts = [
   {
     name: "Email",
     description: "Richieste commerciali e nuovi progetti",
-    value: "hello@email.com",
+    value: "s.bendahmani@swantech.it",
     icon: "lucide:mail",
-    link: "mailto:hello@email.com"
+    link: "mailto:s.bendahmani@swantech.it"
   },
   {
     name: "LinkedIn",
-    description: "Networking professionale",
-    value: "linkedin.com/in/tuoprofilo",
+    description: "Networking professionale e Curriculum",
+    value: "linkedin.com/in/me",
     icon: "simple-icons:linkedin",
-    link: "https://linkedin.com/in/tuoprofilo",
+    link: "https://www.linkedin.com/in/sabri-bendahmani-4b4582375/",
     color: "#0A66C2",
   },
   {
     name: "GitHub",
     description: "Repository e progetti open source",
-    value: "github.com/tuoprofilo",
+    value: "github.com/me",
     icon: "simple-icons:github",
-    link: "https://github.com/tuoprofilo"
+    link: "https://github.com/SemXK?tab=overview&from=2025-12-01&to=2025-12-31"
   },
   {
     name: "CV",
     description: "Curriculum aggiornato",
     value: "Scarica PDF",
     icon: "lucide:file-text",
-    link: "/cv.pdf",
+    link: "src/assets/documents/sb_cv.pdf",
     color: "#38bdf8",
   },
   {
@@ -37,17 +37,17 @@ const contacts = [
     description: "Contatto rapido",
     value: "Scrivimi direttamente",
     icon: "simple-icons:whatsapp",
-    link: "https://wa.me/3501667774",
+    link: "https://wa.me/ 3501667774",
     color: "#25D366",
   },
-  {
-    name: "Disponibilità",
-    description: "Collaborazioni freelance",
-    value: "Disponibile per nuovi progetti",
-    icon: "lucide:calendar-check",
-    link: "#",
-    color: "#006BFF",
-  }
+  // {
+  //   name: "Disponibilità",
+  //   description: "Collaborazioni freelance",
+  //   value: "Disponibile per nuovi progetti",
+  //   icon: "lucide:calendar-check",
+  //   link: "#",
+  //   color: "#006BFF",
+  // }
 ]
 </script>
 
@@ -72,7 +72,7 @@ const contacts = [
         </div>
 
         <div class="contact-reasons">
-          <div class="reason-card">
+          <div class="card">
             <h3>Nuovi prodotti digitali</h3>
             <p>
               Dall'idea alla produzione: progettazione, sviluppo
@@ -80,7 +80,7 @@ const contacts = [
             </p>
           </div>
 
-          <div class="reason-card">
+          <div class="card">
             <h3>Modernizzazione software</h3>
             <p>
               Miglioramento di applicazioni esistenti, architetture
@@ -88,7 +88,7 @@ const contacts = [
             </p>
           </div>
 
-          <div class="reason-card">
+          <div class="card">
             <h3>Supporto al team tecnico</h3>
             <p>
               Collaborazione con team interni per accelerare lo sviluppo
@@ -127,6 +127,9 @@ const contacts = [
 
 }
 
+.fullScreenHeight {
+  min-height: 90vh;
+}
 
 
 .section-header {
@@ -297,5 +300,21 @@ const contacts = [
 
   }
 
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.card h3 {
+  color: #38bdf8;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #cbd5e1;
 }
 </style>

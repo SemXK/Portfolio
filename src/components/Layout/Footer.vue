@@ -2,8 +2,8 @@
   <footer class="footer">
     <div class="container">
       <div>
-        <h3>John Doe</h3>
-        <p>Web & Mobile Developer</p>
+        <h3>Sabri Bendahmani</h3>
+        <p>Web & Mobile Freelance Fullstack Developer</p>
       </div>
 
       <div class="links">
@@ -14,7 +14,7 @@
     </div>
 
     <div class="copyright">
-      © {{ year }} John Doe. All rights reserved.
+      © {{ year }} Sabri Bendahmani. All rights reserved.
     </div>
   </footer>
 </template>
