@@ -84,7 +84,7 @@ import TabResoconto from '../Utils/TabResoconto.vue';
           soluzione concreta, sarò felice di aiutarti.
         </p>
 
-        <a href="#contact" class="btn-primary">
+        <a href="/contact" class="btn-primary">
           Richiedi una consulenza
         </a>
 
